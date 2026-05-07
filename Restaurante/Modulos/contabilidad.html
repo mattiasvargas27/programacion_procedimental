@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contabilidad Futurista</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+
+    <style>
+
+        html, body{
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        body{
+            background: radial-gradient(circle at top, #0f172a, #020617);
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+        }
+
+        
+
+        .navbar{
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #38bdf8;
+            box-shadow: 0px 0px 20px #38bdf8;
+        }
+
+        .navbar-item,
+        .navbar-link{
+            color: white !important;
+            font-weight: bold;
+        }
+
+        .titulo-navbar{
+            font-size: 28px;
+            color: #38bdf8;
+            text-shadow: 0px 0px 10px #38bdf8;
+        }
+
+        
+
+        .contenedor{
+            width: 90%;
+            margin: 40px auto;
+            padding: 30px;
+
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(15px);
+
+            border-radius: 20px;
+
+            box-shadow: 0px 0px 25px rgba(56,189,248,0.4);
+        }
+
+        
+
+        .perfil{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .foto{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid #38bdf8;
+            box-shadow: 0px 0px 20px #38bdf8;
+
+            object-fit: cover;
+        }
+
+        .nombre{
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+       
+
+        .panel-formulario{
+            padding: 30px;
+            border: 2px solid rgba(56,189,248,0.4);
+            border-radius: 20px;
+        }
+
+        .label{
+            color: #38bdf8 !important;
+            font-weight: bold;
+        }
+
+        .input{
+            background: rgba(255,255,255,0.05);
+            border: 1px solid #38bdf8;
+            color: white;
+        }
+
+        .input::placeholder{
+            color: #94a3b8;
+        }
+
+        .input:focus{
+            border-color: #22d3ee;
+            box-shadow: 0px 0px 10px #22d3ee;
+        }
+
+    
+
+        .boton-falso{
+            background: linear-gradient(45deg,#06b6d4,#3b82f6);
+            color: white !important;
+            border-radius: 10px;
+            margin-left: 10px;
+            transition: 0.3s;
+        }
+
+        .boton-falso:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px #38bdf8;
+        }
+
+        .boton-enviar{
+            width: 100%;
+            margin-top: 20px;
+
+            background: linear-gradient(45deg,#06b6d4,#3b82f6);
+            border: none;
+
+            color: white;
+            font-weight: bold;
+
+            box-shadow: 0px 0px 15px #38bdf8;
+        }
+
+        .boton-enviar:hover{
+            transform: scale(1.03);
+            box-shadow: 0px 0px 25px #06b6d4;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    
+
+    <nav class="navbar">
+
+        <div class="navbar-brand">
+
+            <a class="navbar-item titulo-navbar">
+                💰 Contabilidad
+            </a>
+
+        </div>
+
+        <div class="navbar-end">
+
+            <a class="navbar-item boton-falso">
+                Registrarse
+            </a>
+
+            <a class="navbar-item boton-falso">
+                Iniciar Sesión
+            </a>
+
+        </div>
+
+    </nav>
+
+   
+
+    <div class="contenedor">
+
+        <div class="columns">
+
+            
+
+            <div class="column is-4">
+
+                <div class="perfil">
+
+                    <img
+                    class="foto"
+                    src="https://wallpapercat.com/w/middle-retina/5/5/6/213816-2880x1800-desktop-hd-maluma-wallpaper-image.jpg"
+                    >
+
+                    <p class="nombre">
+                        Mattias Vargas López
+                    </p>
+
+                </div>
+
+            </div>
+
+           
+
+            <div class="column is-8">
+
+                <div class="panel-formulario">
+
+                    <div class="field">
+                        <label class="label">Ventas</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="text"
+                            placeholder="Ingrese ventas">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Fecha</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="date">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Ingresos</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="number"
+                            placeholder="Ingrese ingresos">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Egresos</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="number"
+                            placeholder="Ingrese egresos">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Concepto</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="text"
+                            placeholder="Ingrese concepto">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Valor</label>
+
+                        <div class="control">
+                            <input
+                            class="input"
+                            type="number"
+                            placeholder="Ingrese valor">
+                        </div>
+                    </div>
+
+                    <button id="btnEnviar"
+                    class="button boton-enviar">
+
+                    Guardar Registro 
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        const boton = document.getElementById("btnEnviar");
+
+        boton.addEventListener("click", function(){
+
+            alert("Registro guardado con éxito ");
+
+            location.reload();
+
+        });
+
+    </script>
+
+</body>
+</html>
+    
+    
+</body>
+</html>

@@ -4,8 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedidos</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+  />
+  <link rel="stylesheet" href="../css/pedidos.css">
 </head>
 <body>
-    
+<div class="container">
+    <h2 class="title is-2">📲Pedidos</h2>
+
+
+
+    <div class="columns">
+        <div class="column">
+            <div class="field">
+                <label class="label">Producto</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:Pizza Al estilo varvas">
+                    </div>
+                    
+            </div>
+            
+        </div>
+         <div class="column">
+            <div class="field">
+                <label class="label">Direccion</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:Calle 1e #7a06-La cumbre">
+                    </div>
+                    
+            </div>
+            
+        </div>
+        <div class="column">
+            <div class="field">
+                <label class="label">Nombre del usuario</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:Juan Luis Londoño Arias">
+                    </div>
+                    
+            </div>
+            
+        </div>
+    </div>
+
+
+     <div class="columns">
+
+
+       <div class="column">
+            <div class="field">
+                <label class="label">Cantidad</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:1 pizza">
+                    </div>
+                    
+            </div>
+            
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <label class="label">Metodo de pago</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:Bancolombia">
+                    </div>
+                    
+            </div>
+            
+        </div>
+
+        <div class="column">
+            <div class="field">
+                <label class="label">Telefono</label>
+                    <div class="control">
+                        <input class="input" type="text" placeholder="Ej:3120302024">
+                    </div>
+                    
+            </div>
+            
+        </div>
+
+
+     </div>
+
+     <button id="btnEnviar"
+                    class="button boton-enviar">
+
+                    Realizar Pedido
+
+                    </button>
+     </div>
+
+
+     <button id="btnInicio">
+    Volver al inicio
+    </button>
+
+
+
+     <script src="../js/pedidos.js">
+     </script>
 </body>
 </html>

@@ -9,78 +9,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
-    <style>
-    html, body {
-        height: 100%;
-        margin: 0;
-    }
-
-    body {
-        min-height: 100vh;
-        background: radial-gradient(circle at top, #0f172a, #020617);
-    }
-    </style>
-
-    <style>
-        body {
-            background: radial-gradient(circle at top, #0f172a, #020617);
-            color: white;
-            font-family: 'Segoe UI', sans-serif;
-        }
-
-        .title {
-            color: #38bdf8;
-            text-shadow: 0 0 10px #38bdf8;
-        }
-
-        .subtitle {
-            color: #94a3b8;
-        }
-
-        .box-container {
-            width: 60%;
-            margin: auto;
-            padding: 30px;
-            border-radius: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
-            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
-        }
-
-        .label {
-            color: #38bdf8;
-        }
-
-        .input {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid #38bdf8;
-            color: white;
-        }
-
-        .input::placeholder {
-            color: #94a3b8;
-        }
-
-        .input:focus {
-            border-color: #22d3ee;
-            box-shadow: 0 0 10px #22d3ee;
-        }
-
-        .button {
-            margin-top: 20px;
-            background: linear-gradient(45deg, #06b6d4, #3b82f6);
-            border: none;
-            color: white;
-            font-weight: bold;
-            box-shadow: 0 0 15px #3b82f6;
-            transition: 0.3s;
-        }
-
-        .button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 25px #06b6d4;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/inventario.css">
 </head>
 
 <body>
@@ -134,13 +63,12 @@
 
 </div>
 
-<script>
-    const boton = document.getElementById("btnEnviar");
+<button id="btnInicio">
+    Volver al inicio
+</button>
 
-    boton.addEventListener("click", function() {
-        alert(" Inventario Registrado con éxito");
-        location.reload();
-    });
+<script src="../js/inventario.js">
+    
 </script>
 
 </body>

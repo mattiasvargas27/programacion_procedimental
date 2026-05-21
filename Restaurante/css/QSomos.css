@@ -1,0 +1,266 @@
+html, body{
+
+    margin: 0;
+
+    padding: 0;
+
+    min-height: 100vh;
+
+    font-family: 'Segoe UI', sans-serif;
+
+    background: radial-gradient(circle at top, #0f172a, #020617);
+
+    color: white;
+}
+
+/* NAVBAR */
+
+.navbar{
+
+    background: rgba(255,255,255,0.05) !important;
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(56,189,248,0.3);
+
+    padding: 15px 30px;
+}
+
+.logo{
+
+    color: #38bdf8 !important;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    text-shadow: 0px 0px 12px #38bdf8;
+}
+
+/* HERO */
+
+.hero-section{
+
+    text-align: center;
+
+    padding: 60px 20px 30px 20px;
+}
+
+.titulo-principal{
+
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: #38bdf8;
+
+    text-shadow: 0px 0px 20px #38bdf8;
+}
+
+.subtitulo{
+
+    margin-top: 15px;
+
+    font-size: 20px;
+
+    color: #cbd5e1;
+}
+
+/* CONTENEDOR */
+
+.contenedor-historia{
+
+    padding: 40px;
+}
+
+/* TARJETA IMAGEN */
+
+.card-imagen{
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    border: 1px solid rgba(56,189,248,0.3);
+
+    box-shadow: 0px 0px 25px rgba(56,189,248,0.2);
+
+    height: 100%;
+}
+
+.imagen-restaurante{
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    object-fit: cover;
+
+    height: 100%;
+}
+
+/* HISTORIA */
+
+.card-historia{
+
+    background: rgba(255,255,255,0.05);
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    border: 1px solid rgba(56,189,248,0.3);
+
+    box-shadow: 0px 0px 25px rgba(56,189,248,0.2);
+}
+
+.titulo-historia{
+
+    color: #38bdf8;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+    text-shadow: 0px 0px 12px #38bdf8;
+}
+
+.texto-historia{
+
+    color: #cbd5e1;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+    font-size: 17px;
+}
+
+/* VALORES */
+
+.contenedor-valores{
+
+    padding: 20px 40px 50px 40px;
+
+    text-align: center;
+}
+
+.titulo-valores{
+
+    color: #38bdf8;
+
+    font-size: 40px;
+
+    margin-bottom: 35px;
+
+    text-shadow: 0px 0px 12px #38bdf8;
+}
+
+/* CARDS */
+
+.valor-card{
+
+    background: rgba(255,255,255,0.05);
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(56,189,248,0.3);
+
+    transition: 0.3s;
+
+    height: 100%;
+
+    box-shadow: 0px 0px 20px rgba(56,189,248,0.2);
+}
+
+.valor-card:hover{
+
+    transform: translateY(-8px);
+
+    box-shadow: 0px 0px 30px rgba(56,189,248,0.5);
+}
+
+.valor-card h3{
+
+    color: #38bdf8;
+
+    margin-bottom: 15px;
+
+    font-size: 28px;
+}
+
+.valor-card p{
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+/* BOTON */
+
+#btnInicio{
+
+    display: block;
+
+    margin: 20px auto 50px auto;
+
+    padding: 14px 28px;
+
+    border: 1px solid #38bdf8;
+
+    border-radius: 15px;
+
+    background: rgba(255,255,255,0.05);
+
+    color: #38bdf8;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 0px 15px rgba(56,189,248,0.3);
+}
+
+#btnInicio:hover{
+
+    background: #38bdf8;
+
+    color: white;
+
+    transform: scale(1.05);
+
+    box-shadow: 0px 0px 25px #38bdf8;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px){
+
+    .titulo-principal{
+
+        font-size: 40px;
+    }
+
+    .contenedor-historia{
+
+        padding: 20px;
+    }
+
+    .contenedor-valores{
+
+        padding: 20px;
+    }
+
+    .card-historia{
+
+        margin-top: 20px;
+    }
+}

@@ -19,6 +19,7 @@ let password = document.getElementById("password").value;
 let fecha_nacimiento = document.getElementById("fecha_nacimiento").value;
 
 
+function ValidarDatos(){
 
 if (nombre_usuarios== "" ||apellido== "" ||documento== "" ||telefono_usuarios== "" ||email== "" ||cargo== "" || password== "" ){
     console.log("Los campos no pueden estar vacios")
@@ -47,4 +48,5 @@ else{
         console.log("Los datos son incorrectos")
     }
     
+}
 }

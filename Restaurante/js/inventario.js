@@ -20,3 +20,23 @@ let cantidad_inventario=document.getElementById("cantidad_inventario").value;
 let marca=document.getElementById("marca").value;
 
 
+function ValidarDatos(){
+    if (codigo=="" || nombre_producto=="" || cantidad_inventario=="" || marca==""){
+        console.log("Los datos no pueden estar vacios")
+    }
+    else{
+        if(codigo ==/[a-zA-Z]/){
+            console.log("Los datos son incorrectos")
+        }
+        if(nombre_producto != /[a-zA-Z]/){
+            console.log("Los datos son incorrectos")
+        }
+        if(cantidad_inventario==/[a-zA-Z]/){
+            console.log("Los datos son incorrectos")
+        }
+        if(marca != /[a-zA-Z]/){
+            console.log("Los datos son incorrectos")
+        }        
+    }
+    }
+

@@ -32,7 +32,7 @@ else{
         console.log("Los datos son incorrectos")
     }
 
-    if(documento.length() >=10 || documento!= /[a-zA-Z]/){
+    if(documento.length() >=10 || documento== /[a-zA-Z]/){
         console.log("Los datos son incorrectos")
     }
     if(telefono_usuarios.length() >=10 || telefono_usuarios!= /[a-zA-Z]/){

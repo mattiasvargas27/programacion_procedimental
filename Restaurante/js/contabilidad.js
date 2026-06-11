@@ -43,3 +43,26 @@ let ingresos=document.getElementById("ingresos").value;
 let egresos=document.getElementById("egresos").value;
 let concepto=document.getElementById("concepto").value;
 let valor=document.getElementById("valor").value;
+
+function ValidarDatos(){
+    if (ventas== "" ||fecha== "" ||ingresos== "" ||egresos== "" ||concepto== "" ||valor== "" ){
+    console.log("Los campos no pueden estar vacios")
+    }
+    else{
+            if(ventas ==/[a-zA-Z]/){
+                console.log("Los datos son incorrectos")
+            }
+            if(ingresos ==/[a-zA-Z]/){
+                console.log("Los datos son incorrectos")
+            if(egresos ==/[a-zA-Z]/){
+                console.log("Los datos son incorrectos")
+            }
+            if(valor ==/[a-zA-Z]/){
+                console.log("Los datos son incorrectos")
+            }
+
+
+
+        }
+    }
+}

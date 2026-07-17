@@ -1,4 +1,4 @@
-.html, body{
+html, body{
 
     margin: 0;
 
@@ -94,14 +94,10 @@ body{
     border-radius: 12px;
 }
 
-/* PLACEHOLDER */
-
 .input::placeholder{
 
     color: #94a3b8;
 }
-
-/* FOCUS */
 
 .input:focus{
 
@@ -112,7 +108,14 @@ body{
 
 /* SELECT */
 
+.select{
+
+    width: 100%;
+}
+
 .select select{
+
+    width: 100%;
 
     background: rgba(255,255,255,0.05) !important;
 
@@ -121,6 +124,31 @@ body{
     color: white !important;
 
     border-radius: 12px;
+
+    box-shadow: none;
+}
+
+.select select:focus{
+
+    border-color: #22d3ee !important;
+
+    box-shadow: 0px 0px 12px #22d3ee !important;
+}
+
+/* OPCIONES DEL SELECT */
+
+.select select option{
+
+    background: #1e293b !important;
+
+    color: white !important;
+}
+
+select option{
+
+    background: #1e293b !important;
+
+    color: white !important;
 }
 
 /* RADIOS */
@@ -146,8 +174,6 @@ body{
 
     flex-wrap: wrap;
 }
-
-/* BOTON GUARDAR */
 
 .boton-guardar{
 

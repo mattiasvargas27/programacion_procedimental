@@ -4,34 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contabilidad</title>
-    
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contabilidad Futurista</title>
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
 
     <link rel="stylesheet" href="../css/contabilidad.css">
+    <link rel="stylesheet" href="../css/sweetalert.css">
+
 </head>
 
 <body>
 
-    
-
-    <nav class="navbar">
+<nav class="navbar">
 
     <div class="navbar-brand">
 
@@ -43,11 +29,11 @@
 
     <div class="navbar-end">
 
-        <a type="button" id="btnRegistro" class="navbar-item boton-falso">
+        <a id="btnRegistro" class="navbar-item boton-falso">
             Registrarse
         </a>
 
-        <a type="button" id="btnLogin" class="navbar-item boton-falso">
+        <a id="btnLogin" class="navbar-item boton-falso">
             Iniciar Sesión
         </a>
 
@@ -55,116 +41,109 @@
 
 </nav>
 
-   
+<div class="contenedor">
 
-    <div class="contenedor">
+    <div class="columns">
 
-        <div class="columns">
+        <div class="column is-4">
 
-            
+            <div class="perfil">
 
-            <div class="column is-4">
-
-                <div class="perfil">
-
-                    <img
+                <img
                     class="foto"
                     src="https://wallpapercat.com/w/middle-retina/5/5/6/213816-2880x1800-desktop-hd-maluma-wallpaper-image.jpg"
-                    >
+                    alt="Usuario">
 
-                    <p class="nombre">
-                        Mattias Vargas López
-                    </p>
-
-                </div>
+                <p class="nombre">
+                    Mattias Vargas López
+                </p>
 
             </div>
 
-           
+        </div>
 
-            <div class="column is-8">
+        <div class="column is-8">
 
-                <div class="panel-formulario">
+            <div class="panel-formulario">
 
-                    <div class="field">
-                        <label class="label">Ventas</label>
+                <div class="field">
+                    <label class="label">Ventas</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="text"
-                            placeholder="Ingrese ventas"
-                            id="ventas">
-                        </div>
+                            id="ventas"
+                            placeholder="Ingrese ventas">
                     </div>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Fecha</label>
+                <div class="field">
+                    <label class="label">Fecha</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="date"
                             id="fecha">
-                        </div>
                     </div>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Ingresos</label>
+                <div class="field">
+                    <label class="label">Ingresos</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="number"
-                            placeholder="Ingrese ingresos"
-                            id="ingresos">
-                        </div>
+                            id="ingresos"
+                            placeholder="Ingrese ingresos">
                     </div>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Egresos</label>
+                <div class="field">
+                    <label class="label">Egresos</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="number"
-                            placeholder="Ingrese egresos"
-                            id="egresos">
-                        </div>
+                            id="egresos"
+                            placeholder="Ingrese egresos">
                     </div>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Concepto</label>
+                <div class="field">
+                    <label class="label">Concepto</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="text"
-                            placeholder="Ingrese concepto"
-                            id="concepto">
-                        </div>
+                            id="concepto"
+                            placeholder="Ingrese concepto">
                     </div>
+                </div>
 
-                    <div class="field">
-                        <label class="label">Valor</label>
+                <div class="field">
+                    <label class="label">Valor</label>
 
-                        <div class="control">
-                            <input
+                    <div class="control">
+                        <input
                             class="input"
                             type="number"
-                            placeholder="Ingrese valor"
-                            id="valor">
-                        </div>
+                            id="valor"
+                            placeholder="Ingrese valor">
                     </div>
+                </div>
 
-                    <button id="btnEnviar"
+                <button
+                    id="btnEnviar"
                     class="button boton-enviar">
 
-                    Guardar Registro 
+                    Guardar Registro
 
-                    </button>
-
-                </div>
+                </button>
 
             </div>
 
@@ -172,20 +151,15 @@
 
     </div>
 
-    
+</div>
 
-
-    <button id="btnInicio">
+<button id="btnInicio">
     Volver al inicio
 </button>
 
-<script src="../js/contabilidad.js">
-    
-</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-</body>
-</html>
-    
-    
+<script src="../js/contabilidad.js"></script>
+
 </body>
 </html>

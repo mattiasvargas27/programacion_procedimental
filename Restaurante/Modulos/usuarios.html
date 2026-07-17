@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 
     <meta charset="UTF-8">
@@ -9,182 +10,123 @@
     <title>Usuarios</title>
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
 
     <link rel="stylesheet" href="../css/usuarios.css">
+    <link rel="stylesheet" href="../css/sweetalert.css">
 
 </head>
 
 <body>
 
-<nav class="navbar">
+    <nav class="navbar">
 
-    <div class="navbar-brand">
+        <div class="navbar-brand">
 
-        <a class="navbar-item">
+            <a class="navbar-item">
+                Registro de Usuarios
+            </a>
 
-            Registro de Usuarios
+        </div>
 
-        </a>
+    </nav>
 
-    </div>
+    <div class="contenedor">
 
-</nav>
+        <div class="box-formulario">
 
-<div class="contenedor">
+            <div class="columns">
 
-    <div class="box-formulario">
+                <div class="column">
 
-        <div class="columns">
+                    <div class="field">
 
-            <div class="column">
+                        <label class="label">Ingresa tu nombre</label>
 
-                <div class="field">
+                        <div class="control">
 
-                    <label class="label">Ingresa tu nombre</label>
+                            <input
+                                class="input"
+                                type="text"
+                                id="nombre_usuarios"
+                                placeholder="Ej: Mattias">
 
-                    <div class="control">
-
-                        <input
-                         class="input"
-                          type="text"
-                           placeholder="Ej:Mattias"
-                           id="nombre_usuarios">
-
-                    </div>
-
-                </div>
-
-                <div class="field">
-
-                    <label class="label">Ingresa tu apellido</label>
-
-                    <div class="control">
-
-                        <input
-                         class="input"
-                          type="text"
-                           placeholder="Ej:Vargas Lopez"
-                           id="apellido">
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="field">
 
-                <div class="field">
+                        <label class="label">Ingresa tu apellido</label>
 
-                    <label class="label">Tipo de documento</label>
+                        <div class="control">
 
-                    <label class="radio">
+                            <input
+                                class="input"
+                                type="text"
+                                id="apellido"
+                                placeholder="Ej: Vargas López">
 
-                        <input type="radio" name="TI">
-                        TI
-
-                    </label>
-
-                    <label class="radio">
-
-                        <input type="radio" name="CC">
-                        CC
-
-                    </label>
-
-                </div>
-
-                <div class="field">
-
-                    <label class="label">Numero de documento</label>
-
-                    <div class="control">
-
-                        <input class="input"
-                         type="number"
-                         placeholder="Ej:123456789"
-                         id="documento">
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="field">
 
-                <div class="field">
+                        <label class="label">Tipo de documento</label>
 
-                    <label class="label">Telefono</label>
+                        <label class="radio">
 
-                    <div class="control">
+                            <input
+                                type="radio"
+                                name="tipo_documento"
+                                value="TI">
 
-                        <input class="input" type="number" placeholder="Ej:32134503" id="telefono_usuarios">
+                            TI
+
+                        </label>
+
+                        <label class="radio">
+
+                            <input
+                                type="radio"
+                                name="tipo_documento"
+                                value="CC">
+
+                            CC
+
+                        </label>
 
                     </div>
 
-                </div>
+                    <div class="field">
 
-            </div>
+                        <label class="label">Número de documento</label>
 
-            <div class="column">
+                        <div class="control">
 
-                <div class="field">
+                            <input
+                                class="input"
+                                type="text"
+                                id="documento"
+                                placeholder="Ej: 1234567890">
 
-                    <label class="label">Email</label>
-
-                    <div class="control">
-
-                        <input class="input" type="email" placeholder="Ej:correo@gmail.com" id="email">
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class="field">
 
-                <div class="field">
+                        <label class="label">Teléfono</label>
 
-                <label class="label">Contraseña</label>
+                        <div class="control">
 
-                <div class="control">
-
-                    <input
-                    class="input"
-                    type="password"
-                    placeholder="Ej:Elmaspro_123"
-                    id="password">
-
-                </div>
-                </div>
-                
-
-                <div class="field">
-
-                <label class="label">Fecha de nacimiento</label>
-
-                <div class="control">
-
-                    <input
-                    class="input"
-                    type="date"
-                    id="fecha_nacimiento">
-
-                </div>
-
-                </div>
-                <div class="field">
-
-                    <label class="label">Género</label>
-
-                    <div class="control">
-
-                        <div class="select is-fullwidth">
-
-                            <select id="genero">
-
-                                <option>Seleccione su género</option>
-
-                                <option>Masculino</option>
-
-                                <option>Femenino</option>
-
-                                <option>Therian</option>
-
-                            </select>
+                            <input
+                                class="input"
+                                type="text"
+                                id="telefono_usuarios"
+                                placeholder="Ej: 3201234567">
 
                         </div>
 
@@ -192,44 +134,127 @@
 
                 </div>
 
-                <div class="field">
+                <div class="column">
 
-                    <label class="label">Cargo</label>
+                    <div class="field">
 
-                    <div class="control">
+                        <label class="label">Correo electrónico</label>
 
-                        <input class="input" type="text" placeholder="Ej:Administrador" id="cargo">
+                        <div class="control">
+
+                            <input
+                                class="input"
+                                type="email"
+                                id="email"
+                                placeholder="Ej: correo@gmail.com">
+
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label class="label">Contraseña</label>
+
+                        <div class="control">
+
+                            <input
+                                class="input"
+                                type="password"
+                                id="password"
+                                placeholder="Ingrese una contraseña">
+
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label class="label">Fecha de nacimiento</label>
+
+                        <div class="control">
+
+                            <input
+                                class="input"
+                                type="date"
+                                id="fecha_nacimiento">
+
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label class="label">Género</label>
+
+                        <div class="control">
+
+                            <div class="select is-fullwidth">
+
+                                <select id="genero">
+
+                                    <option value="">Seleccione su género</option>
+
+                                    <option value="Masculino">Masculino</option>
+
+                                    <option value="Femenino">Femenino</option>
+
+                                    <option value="Therian">Therian</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="field">
+
+                        <label class="label">Cargo</label>
+
+                        <div class="control">
+
+                            <input
+                                class="input"
+                                type="text"
+                                id="cargo"
+                                placeholder="Ej: Administrador">
+
+                        </div>
 
                     </div>
 
                 </div>
-                
+
+            </div>
+
+            <div class="botones">
+
+                <button
+                    id="btnGuardar"
+                    class="button boton-guardar">
+
+                    Guardar Usuario
+
+                </button>
+
+                <button id="btnInicio">
+
+                    Volver al inicio
+
+                </button>
 
             </div>
 
         </div>
 
-        <div class="botones">
-
-            <button id="btnGuardar" class="button boton-guardar">
-
-                Guardar Usuario
-
-            </button>
-
-            <button id="btnInicio">
-
-                Volver al inicio
-
-            </button>
-
-        </div>
-
     </div>
 
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-<script src="../js/usuarios.js"></script>
+    <script src="../js/usuarios.js"></script>
 
 </body>
+
 </html>

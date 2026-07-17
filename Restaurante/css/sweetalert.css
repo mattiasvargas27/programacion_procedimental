@@ -1,0 +1,81 @@
+.swal2-popup{
+
+    background: #1b2235 !important;
+
+    border: 2px solid #38bdf8;
+
+    border-radius: 22px;
+
+    box-shadow: 0 0 35px rgba(56,189,248,.45);
+
+    padding: 25px;
+}
+
+.swal2-image{
+
+    border-radius: 18px;
+
+    border: 2px solid #38bdf8;
+
+    box-shadow: 0 0 20px rgba(56,189,248,.5);
+}
+
+.swal2-title{
+
+    color: #38bdf8 !important;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    text-shadow: 0 0 12px #38bdf8;
+}
+
+.swal2-html-container{
+
+    color: #ffffff !important;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    font-weight: 500;
+}
+
+.swal2-confirm{
+
+    background: linear-gradient(45deg,#06b6d4,#3b82f6) !important;
+
+    color: white !important;
+
+    border: none !important;
+
+    border-radius: 12px !important;
+
+    padding: 12px 35px !important;
+
+    font-size: 17px !important;
+
+    font-weight: bold !important;
+
+    transition: .3s;
+
+    box-shadow: 0 0 18px rgba(56,189,248,.5);
+}
+
+.swal2-confirm:hover{
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 28px rgba(56,189,248,.8);
+}
+
+.swal2-close{
+
+    color: #38bdf8 !important;
+}
+
+.swal2-timer-progress-bar{
+
+    background: #38bdf8 !important;
+}

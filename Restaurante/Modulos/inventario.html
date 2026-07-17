@@ -1,91 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventario</title>
 
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="../css/inventario.css">
-</head>
+    <link rel="stylesheet" href="../css/inventario.css" />
+    <link rel="stylesheet" href="../css/sweetalert.css" />
+  </head>
 
-<body>
+  <body>
+    <center>
+      <p class="title is-2 is-spaced">🍕 Inventario</p>
+      <p class="subtitle is-4">Ingresa las características de tu producto</p>
+    </center>
 
-<center>
-   <p class="title is-2 is-spaced">🍕 Inventario </p>
-   <p class="subtitle is-4">Ingresa las características de tu producto</p>
-</center>
+    <div class="box-container">
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Código del producto</label>
+        </div>
+        <div class="field-body">
+          <input
+            class="input"
+            type="number"
+            placeholder="Ex:12345678"
+            id="codigo"
+          />
+        </div>
+      </div>
 
-<div class="box-container">
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Nombre del producto</label>
+        </div>
+        <div class="field-body">
+          <input
+            class="input"
+            type="text"
+            placeholder="Ex:Al estilo varvas"
+            id="nombre_producto"
+          />
+        </div>
+      </div>
 
-<div class="field is-horizontal">
-  <div class="field-label is-normal">
-    <label class="label">Código del producto</label>
-  </div>
-  <div class="field-body">
-    <input
-     class="input"
-     type="number"
-      placeholder="Ex:12345678"
-      id="codigo">
-  </div>
-</div>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Cantidad</label>
+        </div>
+        <div class="field-body">
+          <input
+            class="input"
+            type="text"
+            placeholder="Ex: 2 "
+            id="cantidad_inventario"
+          />
+        </div>
+      </div>
 
-<div class="field is-horizontal">
-  <div class="field-label is-normal">
-    <label class="label">Nombre del producto</label>
-  </div>
-  <div class="field-body">
-    <input 
-    class="input"
-     type="text"
-      placeholder="Ex:Al estilo varvas"
-      id="nombre_producto">
-  </div>
-</div>
+      <div class="field is-horizontal">
+        <div class="field-label is-normal">
+          <label class="label">Marca producto</label>
+        </div>
+        <div class="field-body">
+          <input
+            class="input"
+            type="text"
+            placeholder="Ex:Gourmet"
+            id="marca"
+          />
+        </div>
+      </div>
 
-<div class="field is-horizontal">
-  <div class="field-label is-normal">
-    <label class="label">Cantidad</label>
-  </div>
-  <div class="field-body">
-    <input 
-    class="input"
-     type="text"
-      placeholder="Ex:2 pizzas medianas"
-      id="cantidad_inventario">
-  </div>
-</div>
+      <center>
+        <button id="btnEnviar" class="button">Enviar</button>
+      </center>
+    </div>
 
-<div class="field is-horizontal">
-  <div class="field-label is-normal">
-    <label class="label">Marca producto</label>
-  </div>
-  <div class="field-body">
-    <input 
-    class="input"
-     type="text"
-      placeholder="Ex:Gourmet"
-      id="marca">
-  </div>
-</div>
-
-<center>
-    <button id="btnEnviar" class="button">Enviar</button>
-</center>
-
-</div>
-
-<button id="btnInicio">
-    Volver al inicio
-</button>
-
-<script src="../js/inventario.js">
-    
-</script>
-
-</body>
+    <button id="btnInicio">Volver al inicio</button>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/inventario.js"></script>
+  </body>
 </html>

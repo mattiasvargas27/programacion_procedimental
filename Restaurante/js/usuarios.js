@@ -33,7 +33,7 @@ function ValidarDatos() {
     ) {
 
         Swal.fire({
-            imageUrl: "../Campos_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Campos_maluma.png",
             imageWidth: 400,
             imageAlt: "Campos vacíos"
         });
@@ -46,7 +46,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El nombre solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -60,7 +60,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El apellido solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -74,7 +74,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El documento solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -88,7 +88,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El documento no puede tener más de 10 dígitos.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -102,7 +102,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El teléfono solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -116,7 +116,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El teléfono debe contener exactamente 10 dígitos.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -130,7 +130,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "Ingrese un correo electrónico válido.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -144,7 +144,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El cargo solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Error",
             confirmButtonText: "Aceptar"
@@ -156,7 +156,7 @@ function ValidarDatos() {
     Swal.fire({
         title: "¡Correcto!",
         text: "El usuario fue registrado correctamente.",
-        imageUrl: "../Bien_maluma.png",
+        imageUrl: "/programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
         imageWidth: 400,
         imageAlt: "Correcto",
         confirmButtonText: "Aceptar"

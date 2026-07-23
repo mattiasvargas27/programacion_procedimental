@@ -21,7 +21,7 @@ function ValidarDatos() {
 
     if (producto == "" || direccion == "" || nombre_usuario == "" || cantidad == "" || metodo == "" || telefono == "") {
         Swal.fire({
-            imageUrl: "../Campos_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Campos_maluma.png",
             imageWidth: 400,
             imageAlt: "Campos vacíos"
         });
@@ -33,7 +33,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El nombre del producto solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -45,7 +45,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El nombre del usuario solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -58,7 +58,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "La cantidad del producto solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -70,7 +70,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El nombre del usuario solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -83,7 +83,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El telefono del usuario solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -94,7 +94,7 @@ function ValidarDatos() {
     Swal.fire({
         title: "¡Correcto!",
         text: "Todos los datos fueron ingresados correctamente.",
-        imageUrl: "../Bien_maluma.png",
+        imageUrl: "/programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
         imageWidth: 400,
         imageAlt: "Todo está bien",
         confirmButtonText: "Aceptar"

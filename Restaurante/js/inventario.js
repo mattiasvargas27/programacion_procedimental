@@ -18,7 +18,7 @@ function ValidarDatos() {
     if (codigo == "" || nombre_producto == "" || cantidad_inventario == "" || marca == "") {
 
         Swal.fire({
-            imageUrl: "../Campos_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Campos_maluma.png",
             imageWidth: 400,
             imageAlt: "Campos vacíos"
         });
@@ -31,7 +31,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El código del producto solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -45,7 +45,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El nombre del producto solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -59,7 +59,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "La cantidad del producto solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -73,7 +73,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "La marca del producto solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -85,7 +85,7 @@ function ValidarDatos() {
     Swal.fire({
         title: "¡Correcto!",
         text: "Todos los datos fueron ingresados correctamente.",
-        imageUrl: "../Bien_maluma.png",
+        imageUrl: "/programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
         imageWidth: 400,
         imageAlt: "Todo está bien",
         confirmButtonText: "Aceptar"

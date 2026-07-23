@@ -39,7 +39,7 @@ function ValidarDatos() {
     if (ventas == "" || fecha_contabilidad == "" || ingresos == "" || egresos == "" || concepto == "" || valor == "") {
 
         Swal.fire({
-            imageUrl: "../Campos_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Campos_maluma.png",
             imageWidth: 400,
             imageAlt: "Campos vacíos"
         });
@@ -52,7 +52,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "Las ventas solo pueden contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "/programacion_procedimental/Restaurante/imagenes/Mal_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -66,7 +66,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "Los ingresos solo pueden contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "../programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -80,7 +80,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "Los egresos solo pueden contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "../programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -94,7 +94,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El concepto solo puede contener letras.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "../programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -108,7 +108,7 @@ function ValidarDatos() {
         Swal.fire({
             title: "Error",
             text: "El valor solo puede contener números.",
-            imageUrl: "../Mal_maluma.png",
+            imageUrl: "../programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
             imageWidth: 400,
             imageAlt: "Algo está mal",
             confirmButtonText: "Aceptar"
@@ -120,7 +120,7 @@ function ValidarDatos() {
     Swal.fire({
         title: "¡Correcto!",
         text: "El registro contable fue guardado correctamente.",
-        imageUrl: "../Bien_maluma.png",
+        imageUrl: "/programacion_procedimental/Restaurante/imagenes/Bien_maluma.png",
         imageWidth: 400,
         imageAlt: "Todo está bien",
         confirmButtonText: "Aceptar"
